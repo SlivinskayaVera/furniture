@@ -1,0 +1,200 @@
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 33px;
+    padding-top: 64px;
+
+    &-item {
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 0.5px solid #CACDD8;
+
+        &:hover {
+            border-top: none;
+            animation: shadowBlockCart 0.2s linear 0s 1 normal forwards;
+        }
+    }
+    
+    &-form {
+        display: flex;
+        flex-direction: column;
+        grid-column: 9 / 13;
+        width: 379px;
+        height: 556px;
+        background: #F7F6F6;
+        border-radius: 20px;
+    
+        &:hover {
+            animation: shadowBlockCart 0.2s linear 0s 1 normal forwards;
+        }
+    
+        &__title {
+            margin-top: 42px;
+            margin-bottom: 35px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    
+        &__input-row {
+            display: flex;
+            flex-direction: column;
+            gap: 44px;
+            margin-left: 25px;
+            margin-right: 64px;
+        }
+    
+        &__input {
+            border: none;
+            border-bottom: 1px solid #CACDD8;
+            background-color: transparent;
+            font-size: 14px;
+            font-weight: 400;
+            outline: none;
+    
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 400;
+                color: #000;
+            }
+        }
+    
+        &__price {
+            margin-bottom: 18px;
+            margin-top: 64px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    
+        &__btn-order {
+            cursor: pointer;
+            animation: button 2s linear 2s infinite normal none;
+            align-self: center;
+            width: 290px;
+            height: 41px;
+            border-radius: 20px;
+            border: 1px solid #040404;
+            background-color: transparent;
+            box-sizing: border-box;
+            transition: background 0.5s, color 0.3s;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+    
+            &:hover {
+                color: #FFF;
+                background: #000;
+            }
+        }
+    }
+}
+
+.cards-box {
+    grid-column: 1 / 9;
+
+    &__top {
+        padding-right: 27px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+    }
+
+    &__btn-box {
+        grid-column: 1 / 5;
+        display: flex;
+        gap: 7px;
+        margin-top: 18px;
+    }
+
+    &__btn {
+        cursor: pointer;
+        width: 200px;
+        height: 37px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 50px;
+        border: 1px solid #000;
+        background-color: transparent;
+        transition: background 0.5s, color 0.3s;
+
+        &:hover {
+            color: #FFF;
+            background: #000;
+        }
+    }
+}
+
+.card-product {
+    display: flex;
+    gap: 32px;
+
+    &__img {
+        height: 173px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__title {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__descr {
+        width: 276px;
+        color: #888;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    &__links {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        text-decoration-line: underline;
+
+        &:hover {
+            color: #888;
+            text-decoration: none;
+        }
+    }
+
+    &__counter {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: #F7F6F6;
+        border: none;
+        outline: none;
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+}
+
+

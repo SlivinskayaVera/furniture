@@ -1,0 +1,229 @@
+@media (max-width: 767px) {
+    .content-center {
+        padding-left: calc(50% - 375px/2);
+        padding-right: calc(50% - 375px/2);
+    }
+
+    .top,
+    .top-cart,
+    .top-catalog {
+        padding-top: 32px;
+    }
+
+    .header {
+        height: 57px;
+        border-bottom: none;
+
+        &__search {
+            display: none;
+        }
+
+        .nav {
+            display: none;
+
+            &_mobile {
+                display: flex;
+                gap: 32px;
+                align-items: center;
+            }
+        }
+
+
+        &_logo {
+            width: 99px;
+        }
+    }
+
+
+    .top {
+        &-content {
+            text-align: center;
+            margin-top: 29px;
+
+            &__title {
+                font-size: 48px;
+                line-height: normal;
+                font-style: normal;
+                font-weight: 600;
+            }
+
+            &__slogan {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+
+            &__link {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        &_title {
+            text-align: center;
+            margin-top: 82px;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    .block-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .for {
+        &-box {
+            margin-top: 32px;
+        }
+
+        &-content {
+            justify-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+
+            &__item {
+                grid-column: 1 / -1;
+                height: 375px;
+                width: 343px;
+            }
+
+            &__title {
+                font-size: 28px;
+            }
+        }
+
+        &-item_big {
+            height: 244px;
+        }
+    }
+
+    .special-offer {
+        margin-bottom: 32px;
+        margin-top: 36px;
+    }
+
+    .product {
+        &-box {
+            justify-content: center;
+            gap: 32px;
+        }
+
+        &__title {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &__price-box {
+            column-gap: 57px;
+        }
+
+        &__price {
+            font-size: 18px;
+        }
+
+        &-catalog {
+            margin-bottom: 36px;
+        }
+    }
+
+    .link_box {
+        margin-bottom: 32px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 32px;
+        // column-gap: 100px;
+        justify-items: center;
+
+        &__menu {
+            grid-column: 1 / 3;
+            justify-self: flex-start;
+        }
+
+        &__contacts {
+            grid-column: 3 / 5;
+        }
+
+        &-form {
+            grid-column: 1 / -1;
+            margin-bottom: 32px;
+        }
+    }
+
+    /* Catalog */
+
+    .product-catalog__nav {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .breadcrumbs__link {
+        font-size: 14px;
+    }
+
+
+    /* Cart */
+
+
+    .cart {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        padding-top: 92px;
+
+        &-form {
+            margin-top: 48px;
+            width: 343px;
+        }
+
+        &-item {
+            padding-top: 18px;
+            padding-bottom: 24px;
+        }
+    }
+
+    .cards-box__top,
+    .card-product__img {
+        display: none;
+    }
+
+
+    .card-product {
+        &__title {
+            font-size: 18px;
+        }
+
+        &__descr {
+            width: 253px;
+            font-size: 12px;
+        }
+
+        &__price {
+            font-size: 12px;
+        }
+    }
+
+    .cards-box__btn {
+        width: 165px;
+        height: 37px;
+
+        &-box {
+            margin-top: 8px;
+        }
+    }
+}
+
+@media (max-width: 409px) {
+    .content-center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
